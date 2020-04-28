@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_type_1_s",
+  "info": {
+    "name": "a pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "heroimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "main": {
+      "type": "richtext"
+    }
+  }
+}
