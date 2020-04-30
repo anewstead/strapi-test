@@ -28,6 +28,21 @@
     },
     "main": {
       "type": "richtext"
+    },
+    "restaurants": {
+      "via": "a_pages",
+      "collection": "restaurant"
+    },
+    "my_product_home": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.my-products"
+    },
+    "my_dynamic": {
+      "type": "dynamiczone",
+      "components": [
+        "products.my-products"
+      ]
     }
   }
 }

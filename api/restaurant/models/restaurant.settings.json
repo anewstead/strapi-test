@@ -20,6 +20,17 @@
     "categories": {
       "collection": "category",
       "via": "restaurants"
+    },
+    "a_pages": {
+      "collection": "page-type-1",
+      "via": "restaurants",
+      "dominant": true
+    },
+    "restaurant_hours": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hours.hours-of-operation",
+      "required": true
     }
   }
 }

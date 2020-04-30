@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "aboutpages",
+  "info": {
+    "name": "aboutpage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.my-products"
+    }
+  }
+}
